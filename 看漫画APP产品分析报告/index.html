@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+
+
+  <script type="text/javascript" color="0,0,0" opacity='0.5' zIndex="-1" count="150" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hello, TaoTie" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="看漫画APP作为漫画类产品中的后起之秀，自2016年上线以来，以优质的漫画内容、免费阅读漫画的模式和舒适的阅读体验吸引大量用户，迅速跻身漫画领域的第三名。不过在漫画市场的竞争之中，要怎样才能做得更好、走的更远呢？本文目的在于通过对产品的核心功能进行体验分析，在深入了解产品的基础上结合用户需求分析，提出一些产品功能方面的意见和产品运营方面的建议。 一、产品概述1.1 产品简介看漫画APP是一款免费、">
+<meta property="og:type" content="article">
+<meta property="og:title" content="看漫画APP产品分析报告">
+<meta property="og:url" content="http://yoursite.com/看漫画APP产品分析报告/index.html">
+<meta property="og:site_name" content="涛餮的博客">
+<meta property="og:description" content="看漫画APP作为漫画类产品中的后起之秀，自2016年上线以来，以优质的漫画内容、免费阅读漫画的模式和舒适的阅读体验吸引大量用户，迅速跻身漫画领域的第三名。不过在漫画市场的竞争之中，要怎样才能做得更好、走的更远呢？本文目的在于通过对产品的核心功能进行体验分析，在深入了解产品的基础上结合用户需求分析，提出一些产品功能方面的意见和产品运营方面的建议。 一、产品概述1.1 产品简介看漫画APP是一款免费、">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/0069RVTdgy1fu83imrcitj30qo0f0jw6.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/0069RVTdgy1fu847dpoh2j30qo0f0t9z.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/0069RVTdgy1fu8497kag9j30qo0f00uq.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/0069RVTdgy1fu84c58b8xj30qo0f0diz.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/0069RVTdgy1fu84e0ocv6j30xm0rz40w.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/0069RVTdgy1fu84gp94toj30qo0f0q6h.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/0069RVTdgy1fu84jv2ntnj30qo0f0458.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/0069RVTdgy1fu84m39fguj30qo0f043f.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/0069RVTdgy1fu84nqvpe3j30a00lo11y.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/0069RVTdgy1fu84o8ur1vj30a00lojwt.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/0069RVTdgy1fu84osmfcnj30a00loagj.jpg">
+<meta property="og:updated_time" content="2018-08-13T08:45:30.529Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="看漫画APP产品分析报告">
+<meta name="twitter:description" content="看漫画APP作为漫画类产品中的后起之秀，自2016年上线以来，以优质的漫画内容、免费阅读漫画的模式和舒适的阅读体验吸引大量用户，迅速跻身漫画领域的第三名。不过在漫画市场的竞争之中，要怎样才能做得更好、走的更远呢？本文目的在于通过对产品的核心功能进行体验分析，在深入了解产品的基础上结合用户需求分析，提出一些产品功能方面的意见和产品运营方面的建议。 一、产品概述1.1 产品简介看漫画APP是一款免费、">
+<meta name="twitter:image" content="https://ws3.sinaimg.cn/large/0069RVTdgy1fu83imrcitj30qo0f0jw6.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/看漫画APP产品分析报告/"/>
+
+
+
+
+
+  <title>看漫画APP产品分析报告 | 涛餮的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">涛餮的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Stay hungry,stay foolish！</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/看漫画APP产品分析报告/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="TaoTie">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="涛餮的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">看漫画APP产品分析报告</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-13T17:17:32+09:00">
+                2018-08-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>看漫画APP作为漫画类产品中的后起之秀，自2016年上线以来，以优质的漫画内容、免费阅读漫画的模式和舒适的阅读体验吸引大量用户，迅速跻身漫画领域的第三名。不过在漫画市场的竞争之中，要怎样才能做得更好、走的更远呢？本文目的在于通过对产品的核心功能进行体验分析，在深入了解产品的基础上结合用户需求分析，提出一些产品功能方面的意见和产品运营方面的建议。</p>
+<h2 id="一、产品概述"><a href="#一、产品概述" class="headerlink" title="一、产品概述"></a>一、产品概述</h2><h3 id="1-1-产品简介"><a href="#1-1-产品简介" class="headerlink" title="1.1 产品简介"></a>1.1 产品简介</h3><p>看漫画APP是一款免费、无广告的漫画阅读工具，同时也是一个连接创作者与普通用户的漫画平台。</p>
+<p>定位：热门漫画+超实用功能=看漫画！<br>Slogan：开启二次元</p>
+<h3 id="1-2-体验环境"><a href="#1-2-体验环境" class="headerlink" title="1.2 体验环境"></a>1.2 体验环境</h3><p>产品名称：看漫画<br>产品版本：V2.3.7<br>体验设备：iPhone X（256G）<br>设备系统：iOS 11.4.1（15G77）<br>体验时间：2018.08</p>
+<h2 id="二、市场概述"><a href="#二、市场概述" class="headerlink" title="二、市场概述"></a>二、市场概述</h2><h3 id="2-1-市场环境"><a href="#2-1-市场环境" class="headerlink" title="2.1 市场环境"></a>2.1 市场环境</h3><p>漫画的发展经历了纸媒时代到互联网时代的变革，如今已经在互联网的浪潮之下进入了高速发展时期，越来越多的资本涌入漫画行业，越来越多的漫画企业和漫画产业人才为行业快速发展奠定基础，越来越优质的漫画内容加速着漫画产业的商业化进程。</p>
+<p>2017年，韩国漫画产业销售额约60亿元，其中网络漫画市场约43亿元。韩国文化产业振兴院预计，2020年，网络漫画市场有望增长至60亿元。韩国2016年总人口，仅为中国的3.7%，43亿的数字也让中国漫画从业者相信————未来3-5年内，中国付费漫画市场将增长至30-50亿人民币。</p>
+<h3 id="2-2-市场定位"><a href="#2-2-市场定位" class="headerlink" title="2.2 市场定位"></a>2.2 市场定位</h3><p><img src="https://ws3.sinaimg.cn/large/0069RVTdgy1fu83imrcitj30qo0f0jw6.jpg" alt="漫画行业产业链    来源：艾瑞咨询"><br>中国漫画产业，主要分为漫画内容创作、传播、交流以及IP衍生四个环节。在漫画从纸媒向互联网变革的过程中，互联网漫画平台起到了重要的衔接作用，看漫画正是在这样的时代背景之下应运而生。</p>
+<p>看漫画APP是以优质漫画内容为核心、以免费看正版漫画为战略的漫画阅读工具。在还没有形成付费习惯的中国，通过免费阅读漫画的模式吸引大量用户。</p>
+<h2 id="三、用户分析"><a href="#三、用户分析" class="headerlink" title="三、用户分析"></a>三、用户分析</h2><h3 id="3-1-用户画像"><a href="#3-1-用户画像" class="headerlink" title="3.1 用户画像"></a>3.1 用户画像</h3><p>看漫画APP的漫画内容以国产漫画为主，其中最热门的漫画多是以网络小说为原型创作产生的，可以推测看漫画APP的用户在一定程度上也是网络小说的粉丝；漫画的主题大多是玛丽苏风格，结合现在年轻人喜欢在虚拟世界寻找优越感的情况来推测，看漫画APP应该更受年轻人的喜欢。</p>
+<p>下面是看漫画APP用户统计数据所呈现的结果：<br><img src="https://ws1.sinaimg.cn/large/0069RVTdgy1fu847dpoh2j30qo0f0t9z.jpg" alt="看漫画APP性别分布    来源：易观千帆"></p>
+<p><img src="https://ws2.sinaimg.cn/large/0069RVTdgy1fu8497kag9j30qo0f00uq.jpg" alt="看漫画APP年龄分布  来源：易观千帆"></p>
+<p><img src="https://ws4.sinaimg.cn/large/0069RVTdgy1fu84c58b8xj30qo0f0diz.jpg" alt="看漫画APP地域分布   来源：易观千帆"></p>
+<p>根据易观的用户统计数据来看，使用看漫画APP的用户男女比例47.45:52.55，接近90%是35岁以下的年轻人，其中24岁以下的人群占比接近70%。用户主要集中在东部沿海地区，其中广州区域使用占比最大，重庆和成都区域占比第二。</p>
+<p>综合以上的数据和推测，我们可以大概推测看漫画的目标用户主要是一二三线城市的高校学生，大部分是网络小说粉丝和二次元爱好者。针对这些目标用户，我们可以做一些基本特征归纳：</p>
+<p><strong>基本特征</strong><br>年龄：&lt;=24岁<br>性别：男/女（其中女性比例略高）<br>职业：高校学生、自由职业者、初入社会的职场人士等<br>性格：喜欢二次元、喜好寻找优越感、容易沉迷虚拟世界 </p>
+<p><strong>行为特征</strong><br>娱乐行为：看漫画、动漫等，喜欢二次元世界的文化，包括COS、弹幕、二次元绘画等等<br>消费行为：空闲时间看看漫画，购买漫画周边商品，漫画主题景点的旅行等等<br>社交行为：参加漫展等线下活动，COS喜欢的二次元角色，在社交圈中分享相关感受或者体验等</p>
+<h3 id="3-2-需求分析"><a href="#3-2-需求分析" class="headerlink" title="3.2 需求分析"></a>3.2 需求分析</h3><p>根据上述分析，我们对于用户画像简单的归纳为网络小说粉丝、二次元爱好者以及随便看看的用户，下面针对他们的特征分析具体场景对应的用户需求：</p>
+<p>（1）网络小说粉丝<br>某些用户可能是看过网络小说，听说根据小说出版了漫画，于是在小说的情怀引导下开始喜欢上漫画。<br>用户需求： 通过漫画来重温熟悉的小说情节，印证自己的想象或者将小说的人物和故事具象化</p>
+<p>（2）二次元爱好者<br>某些用户本身沉迷二次元世界，喜欢二次元的画面感和故事感，于是对漫画的兴趣让他们在漫画平台中不断地去找寻符合自己爱好的作品，对于非常喜爱的作品还会乐于分享。<br>用户需求： 通过漫画来放松满足自己的精神需求，在二次元世界中找到生活的乐趣</p>
+<p>（3）随便看看的用户<br>某用户在休闲无聊的时间，会打开看漫画APP看看新的漫画或者热门漫画，探索能够刺激自己兴趣点的内容<br>用户需求： 浏览漫画，达到放松和消遣的效果</p>
+<h2 id="四、产品分析"><a href="#四、产品分析" class="headerlink" title="四、产品分析"></a>四、产品分析</h2><h3 id="4-1-产品结构图"><a href="#4-1-产品结构图" class="headerlink" title="4.1 产品结构图"></a>4.1 产品结构图</h3><p><img src="https://ws3.sinaimg.cn/large/0069RVTdgy1fu84e0ocv6j30xm0rz40w.jpg" alt="看漫画APP产品结构图"></p>
+<p>看漫画APP的功能结构简单清晰，一目了然，根据底部的5个Button主要分为五个大功能模块，分别是“首页”、“更新”、“书架”、“看漫圈”、“我的”。</p>
+<p>首页主要是漫画列表的展示，最优先位置显示的是排行榜单、推荐榜单和日更榜单，首页默认显示是推荐榜单，用户可以选择漫画类型的tab来浏览不同类型的漫画列表，用户也可以自定义顶部的tab来显示喜爱的漫画类型；更新页面是展示每日更新的漫画列表，以一个星期为一个循环tab，方便追更的用户根据更新时间来快速找到追更的漫画；书架页面是展示用户主动浏览或添加过的漫画，包括收藏、历史查看、缓存或者付费购买的漫画。首页、书架页面和更新页面分别从被动(平台推荐)、主动（用户操作）和时间（作品更新时间）这三个维度对漫画内容进行展示，核心作用都是帮助不同需求的用户节省时间，做出快捷的选择，找到自己想要的。</p>
+<p>看漫圈页面主要是以贴吧形式建立起漫画交流社区，主要功能是为用户提供平台交流彼此之间有共同爱好的话题，帮助用户形成圈子，通过社交关系增强用户黏性。</p>
+<p>看漫画APP作为一个漫画平台，将专业的漫画创作团队与用户连接起来，漫画创作团队提供优质的漫画作品，可以获得知名度和收入；用户在APP上查看漫画，并通过打赏、点赞等方式对漫画进行反馈。这个过程中，用户还可以不断的积累经验获取特权，等级模式的建立也可以鼓励用户更积极的参与，从而为APP增加用户活跃和用户黏性，促进整个平台的良好运作。</p>
+<h3 id="4-2-功能体验分析"><a href="#4-2-功能体验分析" class="headerlink" title="4.2 功能体验分析"></a>4.2 功能体验分析</h3><h4 id="4-2-1-阅读漫画、搜索漫画"><a href="#4-2-1-阅读漫画、搜索漫画" class="headerlink" title="4.2.1 阅读漫画、搜索漫画"></a>4.2.1 阅读漫画、搜索漫画</h4><p>作为漫画阅读工具，用户在使用这款工具的时候最基本的两个需求就是：<br>  （1）漫画的内容必须是优质、有吸引力的；<br>  （2）自己想看的漫画是能够很快搜索到，或者展示出来的漫画就是自己喜欢的类型。</p>
+<p>对于这两个基本需求，看漫画APP做的算是很不错了。关于第一点，漫画的内容主要都是针对目标用户精选的类型，目标用户很容易就能找到有吸引力的漫画。关于第二点，看漫画APP做的也很贴心，在首次进入APP时会通过定制化页面让用户选择性别、性格特征以及喜欢的漫画类型，这种方式使得进入首页立刻会根据用户喜好定制的内容，精细化服务对于用户亲切感倍增，对于看漫画APP来说也有利于提高用户的黏性。<br><img src="https://ws2.sinaimg.cn/large/0069RVTdgy1fu84gp94toj30qo0f0q6h.jpg" alt="看漫画 -- 定制化首页"></p>
+<h4 id="4-2-2-看漫圈"><a href="#4-2-2-看漫圈" class="headerlink" title="4.2.2 看漫圈"></a>4.2.2 看漫圈</h4><p>看漫圈是看漫画APP中的交流社区，以漫画主题为核心切入，贴吧发帖方式建立起来的社区。看漫圈主要分为“热门”、“关注”、“分类”三个板块，“热门”板块中展示了最热门的圈子和最热门的帖子，“关注”板块展示了用户关注的圈子中最新的帖子内容，而“分类”板块展示了所有的圈子，进入特定圈子后可以看到圈子中所有的帖子；除此之外，用户还可以在入驻圈子之后自由进行发帖。<br><img src="https://ws1.sinaimg.cn/large/0069RVTdgy1fu84jv2ntnj30qo0f0458.jpg" alt="看漫画 -- 看漫圈"></p>
+<p>看漫圈的初衷，据我推测应该是为了满足用户在看某个漫画的过程中想要找兴趣相同的人一起交流分享的需求而建立的社区平台，与此同时还可以通过用户之间的交流来增加用户的黏性。那么实际效果如何呢？为了更客观的说明，我对看漫圈的数据进行了不同维度的简单统计（注:统计时间为2018年8月7日）：<br>（1）热门板块中，热门圈子共8个，热门帖子共20条，所有的热门帖子均是大约30天前发布；关注量最大的看漫圈——“斗破苍穹”圈子中，全部帖子数量共3360个，其中精华帖数量仅5个，其余大部分帖子主要是催更帖、水贴等；<br>（2） “斗破苍穹”圈子中，最近24小时内更新帖子数量共42个，其中评论数量超过5条的仅2个帖子；<br>（3）看漫画APP排行版前五名的漫画分别是“斗破苍穹”、“绝世唐门”、“神印王座”、“斗罗大陆”和“凤逆天下”，而看漫圈中入驻人数最多的前五名分别是“斗破苍穹”、“斗罗大陆”、“绝世唐门”、“风起苍岚”、“凤逆天下”。</p>
+<p>可以看出，看漫圈的活跃程度并不理想，帖子的评论交流寥寥无几，质量较高的精华帖也是占比很小。上述分析中，我们可以得出结论：<br>（1）看漫画社区中高质量帖子内容匮乏，更新太慢<br>（2） 看漫圈的社区交流太少，活跃程度有待提高<br>（3）受关注高的漫画作品，相关主题的圈子也关注用户较多</p>
+<p><strong>建议：</strong><br>（1）社区是依赖于UGC内容的产品形态，所以能够贡献出优质内容的用户是社区的核心要素，社区运营工作也是需要围绕这一人群进行展开的。建议在看漫圈的体系中提升对高净值人群的重视，通过用户激励体系来刺激他们，让他们贡献出更多优质内容，从而提高社区质量、提升用户活跃。<br>（2） 以话题为切入点的社区，对于用户来说并非是刚需，建议在社区建设过程中发掘更多的需求点来吸引用户，比如圈子中发起一些福利活动，这样既可以促进用户的活跃，也可以通过活动来将用户反向引流到关注度较低的漫画上。</p>
+<h4 id="4-2-3-大道至简"><a href="#4-2-3-大道至简" class="headerlink" title="4.2.3 大道至简"></a>4.2.3 大道至简</h4><p>有一个著名的解决问题的法则——奥卡姆剃刀法则说道：最简单的解决方案往往是正确的解决方案，当提出相互竞争的假设来解决问题时，应该选择具有最少假设的解决方案。</p>
+<p>在产品的设计中，这一法则非常重要，功能上不应该太繁琐，应该尽可能保持简洁化。因为复杂的功能容易增加理解成本和让人迷失，只有简单化更有利于用户理解和操作。随着社会、经济的发展，时间和精力成为人们的稀缺资源。从这个意义上讲，简化才意味着对事物真正的掌控，正所谓“大道至简”。比如：iPhone和iPad只有一个圆形的物理按钮，简单到连三岁的小孩都会使用。</p>
+<p>从大道至简的角度进行分析，我认为看漫画APP在简化操作方面还可以做得更好，举例来说：<br><img src="https://ws4.sinaimg.cn/large/0069RVTdgy1fu84m39fguj30qo0f043f.jpg" alt="看漫画 -- 作品详情页和数据展示页"></p>
+<p>在看漫画APP中，进入某个作品的详情页面，就会看到大量的内容，其中“粉丝打call”的栏目占据着屏幕最中心的位置，并且展示了10项关于当前作品的数据，点击这部分数据将会进入“数据详情页”，看到更加详细的用户数据统计，甚至还会有走势图等数据分析。</p>
+<p>“粉丝打Call”的功能设计初衷应该是想要通过不同维度的数据展示来表现出当前作品的火爆程度，从而给用户一个评判参考的依据，吸引用户来阅读这部作品。我认为功能目的本身没有问题，但是这样的做法是不够简洁、有待优化的，原因有以下三点：首先，对于用户来说，这部分数据实在太过复杂，普通用户对于上图中专业的运营统计参数是没有什么概念的，很难理解“阅读”、“日活”等参数如何定义，很难理解这些数据如何计算，并且在初次见到时也很难评估数值究竟是算大还是算小；其次，“粉丝打Call”功能中复杂的数据实际上都是同一个目的——给用户做参考标准、吸引用户阅读作品，既然这些数据都是同一个目的，把功能简化然后做的更加一目了然或许会效果更好一些；最后，看漫画的核心用户群体是高校学生，几乎没有互联网运营经验，所以对他们而言，这些数据的理解成本会比其他互联网用户群体的理解成本更高。</p>
+<p><strong>建议：</strong><br>（1）将“粉丝打Call”功能展示的数据进行精简，以便降低用户理解成本；<br>（2）删除数据展示页，此部分数据应该用于运营分析进而优化产品功能或运营活动，而不是直接表现给用户，让用户去揣摩。</p>
+<h4 id="4-2-4-产品格调"><a href="#4-2-4-产品格调" class="headerlink" title="4.2.4 产品格调"></a>4.2.4 产品格调</h4><p>好看的皮囊千篇一律，有趣的灵魂万里挑一。每个人对别人的第一印象都是外在的直观感受，你会承认一个人很漂亮，但这并不会让你爱上她，因为外在的直观感受只是停留在表层。真正让你爱上某个人，是因为品质、人格魅力、三观等内在因素，也正是因为这些内在让我们成为一个个与众不同的人。</p>
+<p>产品也是这样，用户使用产品的原因是需求，爱上产品的原因是调性。拥有独特品牌和调性的产品，会给用户一个爱上自己的理由，也可能获得更多产品美誉度和品牌渗透力。</p>
+<p>产品调性，主要是通过内容的定位去实现的，对应的人群也会非常细分和精准。举个例子来看：<br><img src="https://ws4.sinaimg.cn/large/0069RVTdgy1fu84nqvpe3j30a00lo11y.jpg" alt="Next Day"></p>
+<p>上图是Next Day的页面，产品风格极其简洁，每一个细节都透着一股简单、随意的劲儿，符合时下年轻人喜欢的轻松无拘束的感觉，给人印象非常很深。<br><img src="https://ws2.sinaimg.cn/large/0069RVTdgy1fu84o8ur1vj30a00lojwt.jpg" alt="腾讯动漫"></p>
+<p>上图是腾讯动漫的首页，从Button到配色、到选图，无不透露着浓浓的二次元的萌系风格，给人一种穿越到了二次元世界的亲切感。<br><img src="https://ws2.sinaimg.cn/large/0069RVTdgy1fu84osmfcnj30a00loagj.jpg" alt="看漫画"></p>
+<p>看漫画APP的整体格调虽然透露着二次元的气息，不过只能算是中规中矩，没有完全形成自己的格调和特征，建议在提示文字、布局、配色、交互体验等细节上可以进一步深入优化，塑造一个独特的产品格调来吸引用户的喜爱。</p>
+<h2 id="五、总结"><a href="#五、总结" class="headerlink" title="五、总结"></a>五、总结</h2><p>看漫画APP作为后起之秀，在崛起之后迅速成长为行业第三，市场占有率仅次于“快看漫画”和“腾讯动漫”。但是面对着强势对手的压迫，以及行业迅猛发展过程中其他新兴漫画平台的竞争，不断地去思考“要怎样做的更好、走的更远”这个问题是非常必要的。</p>
+<p>本文通过对看漫画APP的产品功能进行分析发现，看漫画APP的重心还是放在漫画内容和阅读体验上，依靠优质的漫画内容和良好的阅读体验来吸引用户，形成一个创作者、平台、用户三方的良性循环；除了核心功能之外，看漫画APP还建立了看漫圈的社区，通过社交功能来增加用户黏性。目前的看漫画APP已经满足了用户的核心需求，不过在用户体验方面依然有可以继续优化的空间，在社交功能上也可以用更多的运营策略进行完善，总体来说还是一款非常优秀的漫画APP。</p>
+<p>本文的产品分析到此结束，看漫画APP的发展之路还很漫长，希望看漫画的未来越来越好，也希望看漫画能够带动中国的漫画行业发展的越来越好。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/博客开篇：征程伊始/" rel="next" title="博客开篇：征程伊始">
+                <i class="fa fa-chevron-left"></i> 博客开篇：征程伊始
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">TaoTie</p>
+              <p class="site-description motion-element" itemprop="description">产品经理的成长之路</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、产品概述"><span class="nav-number">1.</span> <span class="nav-text">一、产品概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-产品简介"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 产品简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-体验环境"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 体验环境</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、市场概述"><span class="nav-number">2.</span> <span class="nav-text">二、市场概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-市场环境"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 市场环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-市场定位"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 市场定位</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、用户分析"><span class="nav-number">3.</span> <span class="nav-text">三、用户分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-用户画像"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 用户画像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-需求分析"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 需求分析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、产品分析"><span class="nav-number">4.</span> <span class="nav-text">四、产品分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-产品结构图"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 产品结构图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-功能体验分析"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 功能体验分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-1-阅读漫画、搜索漫画"><span class="nav-number">4.2.1.</span> <span class="nav-text">4.2.1 阅读漫画、搜索漫画</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-2-看漫圈"><span class="nav-number">4.2.2.</span> <span class="nav-text">4.2.2 看漫圈</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-3-大道至简"><span class="nav-number">4.2.3.</span> <span class="nav-text">4.2.3 大道至简</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-4-产品格调"><span class="nav-number">4.2.4.</span> <span class="nav-text">4.2.4 产品格调</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、总结"><span class="nav-number">5.</span> <span class="nav-text">五、总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">TaoTie</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
